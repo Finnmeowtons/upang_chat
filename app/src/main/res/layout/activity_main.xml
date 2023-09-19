@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTopPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:gravity="center_vertical">
+
+<!--        Top Left Text-->
+        <TextView
+            android:id="@+id/tvMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Messages"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+<!--        Settings-->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/cvSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/primary_color"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/baseline_settings_24"
+                app:tint="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Edit Profile-->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/cvEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/cvSettings"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/primary_color"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/user_avatar"
+                app:tint="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Message Request-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:clickable="true"-->
+<!--            android:foreground="?attr/selectableItemBackground"-->
+<!--            android:id="@+id/cvMessageRequest"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:layout_toStartOf="@+id/cvCreateGroup"-->
+<!--            android:visibility="visible"-->
+<!--            app:cardBackgroundColor="@color/secondary_color"-->
+<!--            app:cardCornerRadius="20dp">-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="6dp"-->
+<!--                app:srcCompat="@drawable/baseline_mail_24"-->
+<!--                app:tint="@color/primary_color" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        Create Group-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvCreateGroup"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:clickable="true"-->
+<!--            android:foreground="?attr/selectableItemBackground"-->
+<!--            android:visibility="visible"-->
+<!--            app:cardBackgroundColor="@color/secondary_color"-->
+<!--            app:cardCornerRadius="60dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:padding="5dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="21dp"-->
+<!--                    android:layout_height="21dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:src="@drawable/baseline_groups_24"-->
+<!--                    app:tint="@color/primary_color" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:text="Create Group"-->
+<!--                    android:textColor="@color/primary_color" />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        Add Friend-->
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/cvAddFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/primary_color"
+            app:cardCornerRadius="20dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/baseline_person_add_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Add Friend"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNav"
+        android:layout_below="@+id/rlTopPanel"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation" />
+
+</RelativeLayout>

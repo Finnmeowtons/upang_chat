@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/white"
+    tools:context=".loginandregister.GettingStarted">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/university_banner_upang"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please provide the following information to proceed:"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/courseSelect"
+                android:layout_width="match_parent"
+                android:inputType="none"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="Select Your Course"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray2"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvCourseError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="right"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Text field is empty!" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/yearLevelSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:inputType="none"
+                android:hint="Select Your Year Level"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray2"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvYearLevelError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="right"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Text field is empty!" />
+
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/gray2" />
+</FrameLayout>

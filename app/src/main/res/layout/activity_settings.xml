@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+
+
+            <ImageButton
+                android:id="@+id/btnBackSettings"
+                android:background="@null"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Settings"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rlAccountSettings"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Account"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/baseline_person_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlReportTechnicalProblem"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Report Technical Problem" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/warning__1_" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/line"/>
+
+    <RelativeLayout
+        android:id="@+id/rlTermsAndPrivacy"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Terms of Service &amp; Privacy Policy"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/notes" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/line"/>
+
+    <RelativeLayout
+        android:id="@+id/rlLogOut"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/logout" />
+
+    </RelativeLayout>
+
+</LinearLayout>

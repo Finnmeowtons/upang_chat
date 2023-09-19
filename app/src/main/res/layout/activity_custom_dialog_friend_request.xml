@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".customDialogs.CustomDialogFriendRequest">
+
+<ImageButton
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/btnClose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_close_24"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@null"/>
+<TextView
+    android:id="@+id/tvDialogTitle"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="35dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cancel Friend Request?"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tvAdditionalInfo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/tvDialogTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_below="@id/tvAdditionalInfo"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnDecline"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Decline" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:text="Confirm" />
+</LinearLayout>
+</RelativeLayout>

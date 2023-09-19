@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:background="@null">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="145dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/light_green"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@null">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_margin="5dp"
+            android:gravity="start"
+            android:buttonTint="@color/primary_color"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imgInterest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/basketball" />
+
+        <TextView
+            android:id="@+id/tvInterestBorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Basketball"/>
+
+        <TextView
+            android:id="@+id/tvInterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Basketball" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="145dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/light_green"
+        android:layout_margin="15dp"
+
+        android:background="@null">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check2"
+                android:layout_width="match_parent"
+                android:elevation="5dp"
+                android:layout_margin="5dp"
+                android:gravity="start"
+                android:buttonTint="@color/primary_color"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imgInterest2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/basketball" />
+
+            <TextView
+                android:id="@+id/tvInterest2Border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="Basketball"/>
+
+            <TextView
+                android:id="@+id/tvInterest2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Basketball" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

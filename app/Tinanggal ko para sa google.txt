@@ -1,0 +1,112 @@
+private lateinit var oneTapClient: SignInClient
+    private lateinit var signUpRequest: BeginSignInRequest
+
+oneTapClient = Identity.getSignInClient(this)
+        signUpRequest = BeginSignInRequest.builder()
+            .setGoogleIdTokenRequestOptions(
+                BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
+                    .setSupported(true)
+                    // Your server's client ID, not your Android client ID.
+                    .setServerClientId(getString(R.string.your_web_client_id))
+                    // Show all accounts on the device.
+                    .setFilterByAuthorizedAccounts(false)
+                    .build())
+            .build()
+
+//Starts the activity of One Tap Sign In
+        val activityResultLauncher: ActivityResultLauncher<IntentSenderRequest>  =
+            registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult(), ActivityResultCallback {result ->
+                if (result.resultCode == Activity.RESULT_OK){
+                    try {
+                        val credential = oneTapClient.getSignInCredentialFromIntent(result.data)
+                        val idToken = credential.googleIdToken
+
+                        val email = credential.id
+                        val fullName = credential.displayName
+                        if(email.contains(".up@phinmaed.com")) {
+                            when {
+                                idToken != null -> {
+
+                                                //Account does not exists, continue to signing up
+                                                auth.createUserWithEmailAndPassword(email, idToken)
+                                                    .addOnCompleteListener { task: Task<AuthResult> ->
+                                                        if (task.isSuccessful) {
+                                                            // Sign-up successful, you can now proceed with further actions
+                                                            val myRef =
+                                                                Firebase.database.getReference("user").push()
+                                                            myRef.child("userName").setValue(fullName)
+                                                            myRef.child("email").setValue(email)
+
+                                                            // Sign in success, update UI with the signed-in user's information
+                                                            Toast.makeText(
+                                                                baseContext,
+                                                                "Account created.",
+                                                                Toast.LENGTH_LONG,
+                                                            ).show()
+
+                                                            startActivity(
+                                                                Intent(
+                                                                    this@Register,
+                                                                    LogInAndRegister::class.java
+                                                                )
+                                                            )
+                                                            Firebase.auth.signOut()
+                                                        } else {
+                                                            // Sign-up failed, handle the error
+                                                            val exception: Exception? = task.exception
+                                                            // Handle the exception and provide appropriate feedback to the user
+                                                            Toast.makeText(
+                                                                baseContext,
+                                                                "Sign-Up Failed.",
+                                                                Toast.LENGTH_LONG,
+                                                            ).show()
+                                                        }
+                                                    }
+
+
+
+
+                                }
+                                else -> {
+                                    Toast.makeText(
+                                        baseContext,
+                                        "Couldnt open.",
+                                        Toast.LENGTH_LONG,
+                                    ).show()
+                                }
+                            }
+                        } else {
+                            Toast.makeText(
+                                baseContext,
+                                "Not a UPANG PHINMA account.",
+                                Toast.LENGTH_LONG,
+                            ).show()
+                        }
+                    } catch (e: ApiException) {
+                        e.printStackTrace()
+                        Toast.makeText(
+                            baseContext,
+                            "Didnt get ID.",
+                            Toast.LENGTH_LONG,
+                        ).show()
+                    }
+                }
+            })
+
+            btnSignInWithGoogle.setOnClickListener {
+//                Firebase.auth.signOut()
+                oneTapClient.beginSignIn(signUpRequest)
+                    .addOnSuccessListener(this@Register) { result ->
+                        val intentSenderRequest: IntentSenderRequest =
+                            IntentSenderRequest.Builder(result.pendingIntent.intentSender).build()
+                        activityResultLauncher.launch(intentSenderRequest)
+                    }
+                    .addOnFailureListener(this@Register) { e ->
+                        // No Google Accounts found. Just continue presenting the signed-out UI.
+                        Toast.makeText(
+                            baseContext,
+                            "No google account found",
+                            Toast.LENGTH_LONG,
+                        ).show()
+                    }
+            }

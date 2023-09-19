@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+
+
+        <ImageButton
+            android:id="@+id/btnBackEditProfile"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Edit Profile"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etFullNameRegister"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:maxLength="35"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray2"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvFullNameError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ERROR"
+        android:gravity="end"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"
+        android:textColor="@android:color/holo_red_light" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/etCourseEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@color/transparent"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/etYearLevelEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@color/transparent"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEditInterest"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interests"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/line"/>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/gray2"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--            Biography-->
+    <TextView
+        android:id="@+id/tvAboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="About Me"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBiography"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAboutMe"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="10dp">
+
+        <EditText
+            android:id="@+id/etBiography"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_below="@id/tvAboutMe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center|top"
+            android:maxLength="100"
+            android:text=""
+            android:textSize="14sp"/>
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/btnDecline"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Changes" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

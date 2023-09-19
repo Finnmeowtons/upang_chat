@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".customDialogs.CustomDialogReport">
+
+    <ImageView
+        android:id="@+id/imgReportCheck"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/check_mark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="5dp"
+        android:visibility="gone"
+
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSuccessfullySubmitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:text="Successfully Submitted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+
+        app:layout_constraintTop_toBottomOf="@+id/imgReportCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<LinearLayout
+    android:id="@+id/llReport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:background="@null"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_24"
+        android:layout_margin="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp">
+    <EditText
+        android:id="@+id/etReport"
+        android:padding="10dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="top"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSubmitReport"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:text="Submit"/>
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

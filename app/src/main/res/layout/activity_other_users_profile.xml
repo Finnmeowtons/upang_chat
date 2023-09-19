@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_margin="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--          More-->
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/baseline_more_vert_24"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+  <!--    Profile-->
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView2"
+      android:minHeight="140dp"
+      android:maxHeight="160dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="100dp"
+      android:layout_marginEnd="15dp"
+      app:cardCornerRadius="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <!--            Profile Full Name-->
+      <TextView
+          android:id="@+id/tvProfileName"
+          android:gravity="center|bottom"
+          android:layout_marginTop="55dp"
+          android:layout_alignParentTop="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:text=""
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+      <!--            Course Profile-->
+        <TextView
+            android:id="@+id/tvCourseProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+
+            android:layout_below="@+id/tvProfileName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="BS Business Administration - Financial Management" />
+
+      <!--            Year Level Profile-->
+        <TextView
+            android:id="@+id/tvYearLevelProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourseProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Year Level" />
+
+    </RelativeLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <!--        Profile Picture-->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cvProfilePicture"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      app:cardBackgroundColor="@color/white"
+      app:cardCornerRadius="60dp"
+      android:layout_marginTop="50dp"
+      android:elevation="0dp"
+      app:layout_constraintEnd_toEndOf="@+id/cardView2"
+      app:layout_constraintStart_toStartOf="@+id/cardView2"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="60dp">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/profile" />
+
+    </androidx.cardview.widget.CardView>
+  </androidx.cardview.widget.CardView>
+
+
+
+
+  <!--    cvMenu-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="@color/gray2"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llAddandMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--        Add Friend-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvAddFriend"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgAddFriend"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/baseline_person_add_24" />
+
+                        <TextView
+                            android:id="@+id/tvAddFriend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center"
+                            android:text="" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--          Message-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvMessage"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/live_chat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Message" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <!--            Biography-->
+            <TextView
+                android:id="@+id/tvAboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llAddandMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="About Me"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBiography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAboutMe"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/gray"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/tvBiography"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:gravity="center|top"
+                    android:text="" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--            Status-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvBiography"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Status" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="25dp"
+                        android:text="Online" />
+
+                    <ImageView
+                        android:id="@+id/imgStatus"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@id/tvStatus"
+                        android:src="@drawable/baseline_circle_24"
+                        app:tint="@android:color/holo_green_light" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--            Friends-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvStatus"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlOtherUserFriends"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Friends" />
+
+                    <ImageView
+                        android:id="@+id/arrow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <TextView
+                        android:id="@+id/tvFriendsCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/arrow2"
+                        android:text="123 Friends" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

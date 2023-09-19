@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">UPANG Chatting App</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="phinmaedEmail">x@up.phinmaed.com</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="or">OR</string>
+    <string name="full_name">Full Name</string>
+    <string name="course">Course</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="your_web_client_id">207194353795-5hlbrs2vephd5bhmppp6c98e71n58095.apps.googleusercontent.com</string>
+
+    <string-array name="courses">
+        <item>Associate in Computer Technology</item>
+        <item>Automotive Servicing NC II</item>
+        <item>Bachelor of Arts in Communication</item>
+        <item>Bachelor of Arts in Political Science</item>
+        <item>Bachelor of Elementary Education</item>
+        <item>Bachelor of Secondary Education - English</item>
+        <item>Bachelor of Secondary Education - Math</item>
+        <item>Bachelor of Secondary Education - Science</item>
+        <item>Bachelor of Secondary Education - Social Studies</item>
+        <item>BS Accountancy</item>
+        <item>BS Accounting Information System</item>
+        <item>BS Architecture</item>
+        <item>BS Business Administration - Financial Management</item>
+        <item>BS Business Administration - Marketing Management</item>
+        <item>BS Civil Engineering</item>
+        <item>BS Computer Engineering</item>
+        <item>BS Criminology</item>
+        <item>BS Electrical Engineering</item>
+        <item>BS Electronic Engineering</item>
+        <item>BS Hospitality Management</item>
+        <item>BS Information Technology</item>
+        <item>BS Management Accounting</item>
+        <item>BS Mechanical Engineering</item>
+        <item>BS Medical Laboratory Science</item>
+        <item>BS Nursing</item>
+        <item>BS Pharmacy</item>
+        <item>BS Psychology</item>
+        <item>BS Tourism Management</item>
+        <item>Bus Driving NC II</item>
+
+    </string-array>
+
+    <string-array name="YearLevel">
+        <item>1st Year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+        <item>4th Year</item>
+        <item>5th Year</item>
+    </string-array>
+
+    <string-array name="Interests">
+
+        <item>Basketball</item>
+        <item>Soccer</item>
+        <item>Tennis</item>
+        <!--        <item>Swimming</item>-->
+        <!--        <item>Volleyball</item>-->
+        <!--        <item>Baseball</item>-->
+        <!--        <item>Badminton</item>-->
+        <!--        <item>Gymnastics</item>-->
+        <!--        <item>Martial Arts</item>-->
+        <!--        <item>Golf</item>-->
+        <!--        <item>Table Tennis</item>-->
+        <!--        <item>Cycling</item>-->
+        <!--        <item>Skateboarding</item>-->
+        <!--        <item>Wrestling</item>-->
+
+        <item>Guitar</item>
+        <item>Singing</item>
+        <item>Piano</item>
+        <!--        <item>Drumming</item>-->
+        <!--        <item>Violin</item>-->
+        <!--        <item>Songwriting</item>-->
+        <!--        <item>Music production</item>-->
+        <!--        <item>Saxophone</item>-->
+        <!--        <item>Flute</item>-->
+        <!--        <item>Trumpet</item>-->
+        <!--        <item>Harmonica</item>-->
+        <!--        <item>Ukulele</item>-->
+        <!--        <item>Bass guitar</item>-->
+        <!--        <item>Accordion</item>-->
+        <!--        <item>Synthesizer</item>-->
+        <!--        <item>Voice acting</item>-->
+
+
+        <item>Rock</item>
+        <item>Hip-hop</item>
+        <!--        <item>Rap</item>-->
+        <!--        <item>Pop</item>-->
+        <!--        <item>RandB</item>-->
+        <!--        <item>Electronic</item>-->
+        <!--        <item>Jazz</item>-->
+        <!--        <item>Classical</item>-->
+        <!--        <item>Country</item>-->
+        <!--        <item>Reggae</item>-->
+        <!--        <item>Alternative</item>-->
+        <!--        <item>Metal</item>-->
+        <!--        <item>Punk</item>-->
+        <!--        <item>Blues</item>-->
+        <!--        <item>Folk</item>-->
+        <!--        <item>Funk</item>-->
+        <!--        <item>Indie</item>-->
+        <!--        <item>Latin</item>-->
+        <!--        <item>K-pop</item>-->
+        <!--        <item>OPM</item>-->
+        <!--        <item>Pinoy Pop</item>-->
+
+        <item>Painting</item>
+        <item>Drawing</item>
+        <!--        <item>Sculpture</item>-->
+        <!--        <item>Photography</item>-->
+        <!--        <item>Digital art</item>-->
+        <!--        <item>Street art</item>-->
+        <!--        <item>Calligraphy</item>-->
+        <!--        <item>Pottery</item>-->
+        <!--        <item>Paper art</item>-->
+
+        <item>Fiction</item>
+        <item>Poetry</item>
+        <!--        <item>Mystery</item>-->
+        <!--        <item>Thriller</item>-->
+        <!--        <item>Science fiction</item>-->
+        <!--        <item>Fantasy</item>-->
+        <!--        <item>Historical fiction</item>-->
+        <!--        <item>Non-fiction</item>-->
+        <!--        <item>Romance</item>-->
+        <!--        <item>Classic literature</item>-->
+        <!--        <item>Crime fiction</item>-->
+        <!--        <item>Horror</item>-->
+        <!--        <item>Adventure</item>-->
+        <!--        <item>Drama</item>-->
+        <!--        <item>Comedy</item>-->
+        <!--        <item>Graphic novels</item>-->
+        <!--        <item>Satire</item>-->
+        <!--        <item>Mythology</item>-->
+        <!--        <item>Plays</item>-->
+        <!--        <item>K-Drama</item>-->
+
+        <item>Biology</item>
+        <item>Chemistry</item>
+        <!--        <item>Physics</item>-->
+        <!--        <item>Astronomy</item>-->
+        <!--        <item>Environmental science</item>-->
+        <!--        <item>Genetics</item>-->
+        <!--        <item>Neuroscience</item>-->
+        <!--        <item>Geology</item>-->
+        <!--        <item>Microbiology</item>-->
+        <!--        <item>Psychology</item>-->
+        <!--        <item>Anthropology</item>-->
+        <!--        <item>Ecology</item>-->
+        <!--        <item>Botany</item>-->
+        <!--        <item>Zoology</item>-->
+        <!--        <item>Marine biology</item>-->
+        <!--        <item>Paleontology</item>-->
+        <!--        <item>Quantum mechanics</item>-->
+        <!--        <item>Astrophysics</item>-->
+        <!--        <item>Biochemistry</item>-->
+        <!--        <item>Evolutionary biology</item>-->
+
+        <item>Programming</item>
+        <item>Web development</item>
+        <!--        <item>App development</item>-->
+        <!--        <item>Artificial Intelligence</item>-->
+        <!--        <item>Cyber-security</item>-->
+        <!--        <item>Data Science</item>-->
+        <!--        <item>Robotics</item>-->
+        <!--        <item>UI-UX Design</item>-->
+        <!--        <item>Augmented Reality/Virtual Reality</item>-->
+        <!--        <item>Cloud computing</item>-->
+        <!--        <item>Computer networking</item>-->
+        <!--        <item>Game development</item>-->
+        <!--        <item>Computer graphics</item>-->
+        <!--        <item>Database management</item>-->
+        <!--        <item>Mobile app design</item>-->
+        <!--        <item>Software engineering</item>-->
+        <!--        <item>Ethical hacking</item>-->
+
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+
+
+    <!--    Bachelor of Arts in Communication-->
+    <!--    Bachelor of Arts in Political Science-->
+    <!--    Bachelor of Elementary Education-->
+    <!--    Bachelor of Secondary Education - Science-->
+    <!--    Bachelor of Secondary Education - Social Studies-->
+    <!--    Bachelor of Secondary Education-English-->
+    <!--    Bachelor of Secondary Education-Math-->
+    <!--    BS Accountancy-->
+    <!--    BS Accounting Information System-->
+    <!--    BS Management Accounting-->
+    <!--    BS Business Administration-Financial Management-->
+    <!--    BS Business Administration-Marketing Management-->
+    <!--    BS Tourism Management-->
+    <!--    BS Hospitality Management-->
+    <!--    BS Criminology-->
+    <!--    BS Architecture-->
+    <!--    BS Civil Engineering-->
+    <!--    BS Computer Engineering-->
+    <!--    BS Electronic Engineering-->
+    <!--    BS Electrical Engineering-->
+    <!--    BS Mechanical Engineering-->
+    <!--    BS Medical Laboratory Science-->
+    <!--    BS Nursing-->
+    <!--    BS Pharmacy-->
+    <!--    BS Psychology-->
+    <!--    BS Information Technology-->
+    <!--    Associate in Computer Technology-->
+    <!--    Technical Education-->
+    <!--    Automotive Servicing NC II-->
+    <!--    Bus Driving NC II-->

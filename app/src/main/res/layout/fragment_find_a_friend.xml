@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FindAFriend"
+    android:padding="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/tvRandomChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Random Chat"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlRandomChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRandomChat"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvLatestRandomMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/Profile"
+            android:text="Click here to start" />
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rlRandomChat"
+            app:srcCompat="@drawable/line" />
+
+
+    <LinearLayout
+        android:id="@+id/btnTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/line">
+
+        <Button
+            android:id="@+id/btnFriends"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:textSize="10dp"
+            android:text="Friends"/>
+
+        <Button
+            android:id="@+id/btnRequestReceived"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:textSize="10dp"
+            android:text="Request Received"/>
+
+        <Button
+            android:id="@+id/btnRequestSent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="10dp"
+            android:text="Request Sent"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/friendsFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnTabs"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

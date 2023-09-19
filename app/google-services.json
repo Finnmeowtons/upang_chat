@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "207194353795",
+    "firebase_url": "https://upang-chatting-app-default-rtdb.firebaseio.com",
+    "project_id": "upang-chatting-app",
+    "storage_bucket": "upang-chatting-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207194353795:android:71c15b708572c4fe402bb6",
+        "android_client_info": {
+          "package_name": "com.example.upangchattingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207194353795-m92gtl2nnjmrub12jp2fr6hkk4rv00cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.upangchattingapp",
+            "certificate_hash": "578ccd36b57caec7ec18a54493eb44b6da47bcc0"
+          }
+        },
+        {
+          "client_id": "207194353795-nh11cdficfct67fjn7fd1sb2n0kts9em.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.upangchattingapp",
+            "certificate_hash": "f8792ccb8b616b578b1966525084e4bc4acb3255"
+          }
+        },
+        {
+          "client_id": "207194353795-5hlbrs2vephd5bhmppp6c98e71n58095.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJn8lv3nVcd8nttwUlA_4wm4VfP1521KY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207194353795-5hlbrs2vephd5bhmppp6c98e71n58095.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

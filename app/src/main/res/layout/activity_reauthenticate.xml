@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reauthenticate">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:layout_centerInParent="true"/>
+
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+
+
+            <ImageButton
+                android:id="@+id/btnBackAccountDeleteConfirmation"
+                android:background="@null"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"/>
+
+            <TextView
+                android:id="@+id/tvReAuthenticatePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Account Delete Confirmation"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewMain"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To continue deleting please input your correct information"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:endIconMode="clear_text">
+
+        <EditText
+            android:maxLength="80"
+            android:id="@+id/etEmailReAuthenticate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray2"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvEmailError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:visibility="invisible"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Error"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:endIconMode="password_toggle">
+
+        <EditText
+            android:id="@+id/etPasswordNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:maxLength="35"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray2"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvPasswordNewError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:visibility="invisible"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Error"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:endIconMode="password_toggle">
+
+        <EditText
+            android:id="@+id/etPasswordReAuthenticate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:maxLength="35"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray2"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvPasswordError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:visibility="invisible"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Error"
+        />
+    
+    <Button
+        android:id="@+id/btnAccountDeleteConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Confirm"/>
+
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+
+<!--    Profile-->
+
+    <!--        Profile Picture-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:minHeight="140dp"
+        android:maxHeight="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--            Profile Full Name-->
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:background="@null"
+                android:gravity="center|bottom"
+                android:layout_marginTop="55dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <!--            Course Profile-->
+            <TextView
+                android:id="@+id/tvCourseProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfileName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:enabled="false"
+                android:text="Course"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+
+            <!--            Year Level Profile-->
+            <TextView
+                android:id="@+id/tvYearLevelProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCourseProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Year Level"
+                android:background="@null"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="60dp"
+        android:layout_marginTop="50dp"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+
+<!--    cvMenu-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/primary_color"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--            Biography-->
+            <TextView
+                android:id="@+id/tvAboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="About Me"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvBiography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAboutMe"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/tvBiography"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_below="@id/tvAboutMe"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|top"
+                    android:maxLength="120"
+                    android:textColor="@color/black"
+                    android:text="" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--            Status-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_below="@id/cvBiography"
+                android:elevation="0dp"
+                app:cardCornerRadius="0dp"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Status" />
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/arrow"
+                        android:text="Online" />
+
+                    <ImageView
+                        android:id="@+id/imgStatus"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toStartOf="@id/tvStatus"
+                        android:src="@drawable/baseline_circle_24"
+                        app:tint="@color/light_green" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--            Friends-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvStatus"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:elevation="0dp"
+                app:cardCornerRadius="0dp"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Friends" />
+
+                    <TextView
+                        android:id="@+id/tvFriendsCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="37dp"
+                        android:text="0 Friends" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/profileProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

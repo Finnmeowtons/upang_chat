@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".DiskPersistence"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UPANGChattingApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".OtherUsersFriendsList"
+            android:exported="false" />
+        <activity
+            android:name=".FriendLists"
+            android:exported="false" />
+        <activity
+            android:name=".Reauthenticate"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountSettings"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Interests"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomDialogRegister"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomDialogReport"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermsServicesAndPrivacyPolicy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".customDialogs.CustomDialogStatusActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".ChecksActiveStatus" />
+
+        <activity
+            android:name=".EditProfile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".messaging.RandomMessaging"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".customDialogs.CustomDialogMessage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".customDialogs.CustomDialogFriendRequest"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtherUsersProfile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchAddAFriend"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".messaging.Messaging"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginandregister.GettingStarted"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginandregister.VerificationPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginandregister.Register"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginandregister.LogInAndRegister"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsServicesAndPrivacyPolicy">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+
+
+            <ImageButton
+                android:id="@+id/btnBackTermsPrivacy"
+                android:background="@null"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Terms of Services and Privacy Policy"
+                android:textSize="18dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Terms of Service:\n\n
+
+These Terms of Service govern your access to and use of the University of Pangasinan Chatting App provided by (us). By accessing or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App.\n\n
+
+1. Acceptance of Terms\n
+        By accessing or using the App, you acknowledge that you have read, understood, and agree to be bound by these Terms.\n\n
+
+2. Eligibility\n
+        You must be a current student of the University of Pangasinan to use the App. By using the App, you represent and warrant that you are a current student of the University of Pangasinan.\n\n
+
+3. Account Registration\n
+        To use certain features of the App, you may need to create an account. You agree to provide accurate, current, and complete information during the registration process. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use of your account or any other breach of security.\n\n
+
+4. User Conduct\n
+        When using the App, you agree to:\n\n
+
+        a. Use the App in compliance with all applicable laws, rules, and regulations.\n
+        b. Treat other users with respect and refrain from engaging in any harmful, offensive, or inappropriate behavior.\n
+        c. Not use the App for any unlawful, misleading, malicious, or discriminatory purposes.\n
+        d. Not impersonate or misrepresent your affiliation with any person or entity.\n
+        e. Not engage in any activity that may interfere with or disrupt the functioning of the App or its servers.\n\n
+
+5. Content\n
+        a. You retain ownership of any content that you submit or upload to the App. However, by submitting or uploading content, you grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, modify, adapt, publish, distribute, and display such content for the purpose of providing and improving the App.\n
+        b. You are solely responsible for the content you post or share through the App. You agree not to post or share any content that is illegal, infringing, defamatory, or violates the rights of any third party.\n
+        c. We reserve the right to remove or disable any content that violates these Terms or is otherwise objectionable.\n\n
+
+6. Privacy\n
+        We respect your privacy and have implemented measures to protect your personal information. Our Privacy Policy, which is incorporated by reference, explains how we collect, use, and disclose your information. By using the App, you consent to the collection, use, and disclosure of your personal information as described in the Privacy Policy.\n\n
+
+7. Intellectual Property\n
+        The App and its content, including but not limited to text, graphics, images, logos, and software, are owned by or licensed to us and are protected by intellectual property laws. You agree not to copy, modify, distribute, or create derivative works based on the App or its content without our prior written consent.\n\n
+
+8. Disclaimer of Warranties\n
+        The App is provided on an 'as is' and 'as available' basis. We do not warrant that the App will be error-free or uninterrupted, nor do we make any representations regarding the accuracy, reliability, or completeness of the content provided through the App. You use the App at your own risk.\n\n
+
+9. Limitation of Liability\n
+        To the maximum extent permitted by law, we shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or in connection with the use of the App, even if we have been advised of the possibility of such damages.\n\n
+
+10. Modifications\n
+        We reserve the right to modify or terminate the App or these Terms at any time without prior notice.\n\n
+
+        Your continued use of the App after any modifications to these Terms will constitute your acceptance of the modified Terms.\n\n
+
+11. Governing Law\n
+        These Terms shall be governed by and construed in accordance with the laws of the Philippines. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of the Philippines.\n\n
+
+12. Severability\n
+        If any provision of these Terms is found to be invalid or unenforceable, that provision shall be deemed modified to the extent necessary to make it valid and enforceable, and the remaining provisions shall continue in full force and effect.\n\n
+
+Privacy Policy:\n
+
+At the University of Pangasinan Chat App, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our App. Please read this Privacy Policy carefully. By using the App, you consent to the practices described in this policy.\n\n
+
+1. Information We Collect:\n
+We may collect certain personal information when you use the App, including but not limited to:\n
+- Your name and contact information.\n
+- Profile information, such as your avatar profile picture.\n
+- Chat and conversation history.\n
+- Information you provide when interacting with other users.\n\n
+
+2. Use of Personal Information:\n
+We may use the personal information we collect for the following purposes:\n
+- To provide and improve the App's features and functionality.\n
+- To personalize your experience on the App.\n
+- To facilitate communication between users.\n
+- To respond to user inquiries and provide customer support.\n
+- To send you administrative notifications, updates, and promotional materials.\n\n
+
+3. Disclosure of Personal Information:\n
+We may disclose your personal information to third parties in the following circumstances:\n
+- With your consent.\n
+- To facilitate communication between users.\n
+- To comply with legal obligations or enforce our rights.\n
+- In connection with a merger, acquisition, or sale of all or a portion of our assets.\n\n
+
+4. Data Security:\n
+We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, please be aware that no data transmission over the internet or storage system can be guaranteed to be 100% secure.\n\n
+
+5. Third-Party Links and Services:\n
+The App may contain links to third-party websites or services that are not controlled or operated by us. This Privacy Policy does not apply to such third-party websites or services, and we are not responsible for their privacy practices. We encourage you to review the privacy policies of those third parties.\n\n
+
+6. Children's Privacy:\n
+The App is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child, who is under the age of 18, has provided personal information to us, please contact us, and we will delete the information.\n\n
+
+7. Changes to this Privacy Policy:\n
+We reserve the right to modify this Privacy Policy at any time. We encourage you to review this policy periodically for any updates. Continued use of the App after any modifications to the Privacy Policy constitutes your consent to such changes.\n\n
+
+8. Contact Us:\n
+If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at [contact information].\n\n
+
+By using the University of Pangasinan Chat App, you acknowledge that you have read, understood, and agreed to this Privacy Policy."
+            android:textColor="@color/black" />
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
